@@ -7,7 +7,7 @@
     "build": "tsc && vite build",
     "preview": "vite preview",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "deploy": "VITE_BASE_PATH=/Internal-Analytics-Platform/ npm run build && gh-pages -d dist"
+    "deploy": "VITE_PLATFORM_URL=https://ob1-wan-kenobi.github.io/Internal-Tools VITE_BASE_PATH=/Internal-Analytics-Platform/ npm run build && gh-pages -d dist"
   },
   "dependencies": {
     "@radix-ui/react-slot": "^1.2.4",
