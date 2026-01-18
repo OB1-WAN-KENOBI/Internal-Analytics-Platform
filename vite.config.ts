@@ -4,8 +4,8 @@ import path from 'path'
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => {
-  // Read base path from environment variable
-  const basePath = process.env.VITE_BASE_PATH || '/'
+  // Use /Internal-Analytics-Platform/ for production (GitHub Pages), / for development
+  const basePath = mode === 'production' ? '/Internal-Analytics-Platform/' : '/'
   
   return {
     plugins: [react()],
