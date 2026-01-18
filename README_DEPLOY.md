@@ -13,7 +13,7 @@
 
 2. Установите URL платформы и задеплойте:
    ```bash
-   VITE_PLATFORM_URL=https://YOUR_USERNAME.github.io/internal-tools npm run deploy
+   VITE_PLATFORM_URL=https://OB1-WAN-KENOBI.github.io/Internal-Tools VITE_BASE_PATH=/Internal-Analytics-Platform/ npm run deploy
    ```
 
 3. Настройте GitHub Pages:
@@ -23,7 +23,7 @@
 
 Просто запустите:
 ```bash
-VITE_PLATFORM_URL=https://YOUR_USERNAME.github.io/internal-tools npm run deploy
+VITE_PLATFORM_URL=https://OB1-WAN-KENOBI.github.io/Internal-Tools npm run deploy
 ```
 
 Или создайте `.env.production` файл с `VITE_PLATFORM_URL=...` и просто:
@@ -33,6 +33,6 @@ npm run deploy
 
 ## Важно
 
-- Замените `YOUR_USERNAME` на ваш GitHub username
-- Замените `internal-tools` на реальное имя репозитория платформы
+- URL платформы: `https://OB1-WAN-KENOBI.github.io/Internal-Tools`
+- URL лендинга: `https://OB1-WAN-KENOBI.github.io/Internal-Analytics-Platform`
 - URL платформы должен быть доступен до деплоя лендинга
